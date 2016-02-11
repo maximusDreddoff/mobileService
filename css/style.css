@@ -1,3 +1,16 @@
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/Roboto%20Medium.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
 .content {
     background: url("../img/background.png");
     background-size: cover;
@@ -6,29 +19,233 @@
     margin: 0 auto;
     display: block;
 }
+
 .content img {
     display: block;
     margin: 20% auto;
 }
+
 .registrationStep1 {
     background: url("../img/background_steps.png");
     background-size: cover;
     height: 640px;
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
 }
+
 .header {
     height: 50px;
-    }
+    width: 100%;
+    background-color: #ffe57f;
+}
+
 .smallLogo {
     float: right;
+    margin-top: 2px;
+    margin-right: 15px;
     height: 45px;
-    width: 60px;
+    width: 55px;
 }
+
 .vcenter {
-    margin: 20px 15px 0 20px;
+    margin: 0 15px 0 20px;
     display: flex;
     align-items: center;
 }
-.text{
+
+.arrowBack {
+    margin-top: 15px;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: RobotoMedium;
+}
+.messenger {
+    font-size: 18px;
+    font-family: RobotoMedium;
+}
+.text-bold {
+    font-weight: bold;
+}
+
+.step {
+    margin-top: 20px;
+    font-family: RobotoMedium;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.stepsIndicators img {
+    display: block;
+    margin: 10px auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.cityPicker ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.cityPicker ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.cityPicker ul li {
+    margin-top: 25px;
+    font-family: RobotoMedium;
+    font-size: 16px;
+}
+
+
+.btnSubmit {
+    margin-top: 35px;
     text-align: center;
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    margin-bottom: 90px;
+    font-family: RobotoMedium;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.inputs {
+    padding: 0 15px;
+}
+
+.inputs input {
+    margin-top: 35px;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc79d;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.inputs select {
+    background-color: #FFF9C4;
+    border: none;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    border-bottom: 3px solid #b71c1c;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 25px 0;
+}
+select option:hover {
+    box-shadow: 0 0 10px 100px #a83434 inset;
+}
+
+.form-control {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 3px solid #b71c1c;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btnEdit {
+    margin-top: 35px;
+    text-align: center;
+    background-color: transparent;
+    color: #b71c1c;
+    border-color: #b71c1c;
+    margin-bottom: 90px;
+    font-family: RobotoMedium;
+    font-size: 14px;
+    width: 100%;
+}
+.btnNext {
+    margin-top: 35px;
+    text-align: center;
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    margin-bottom: 90px;
+    font-family: RobotoMedium;
+    font-size: 14px;
+    width: 100%;
+}
+.numbers {
+    float: right;
+    color: gray;
+}
+.center {
+    margin: 40px 0 15px 0;
+    text-align: center;
+    display: block;
+}
+.addFile a {
+    color: #b71c1c;
+    font-size: 14px;
+    font-family: RobotoMedium;
+}
+.messagerContact ul li {
+    margin-top: 25px;
+    list-style-type: none;
+}
+
+.messagerContact div ul:first-child{
+    text-align: right;
+    font-size: 14px;
+    font-family: RobotoRegular;
+    color: #8d896b;
+}
+.messagerContact div ul:last-child{
+    font-size: 16px;
+    font-family: RobotoMedium;
+    color: #000;
+    line-height: 20px;
+}
+.btn-center {
+    display: block;
+    margin: 20px auto;
+    width: 37%;
+}
+.appreciations {
+    text-align:  center;
+}
+.thanks {
+    margin: 80px 0 30px 0;
+    font-size: 42px;
+    font-family: RobotoMedium;
+    color: #4caf50
+}
+.requestReceived {
+    text-align:  center;
+    font-size: 16px;
+    font-family: RobotoMedium;
+    margin-bottom: 13px;
+}
+.idBorder {
+    margin: 30px 0 40px 0 ;
+    text-align: center;
+}
+.idInfo {
+    text-align: center;
+    padding: 9px 15px;
+    border: 3px solid #b71c1c;
+    color: #b71c1c;
+    font-size: 23px;
+    font-family: RobotoMedium;
+}
+.phoneNumber {
+    font-size: 32px;
+    font-family: RobotoMedium;
+    color: #b71c1c;
+
 }
