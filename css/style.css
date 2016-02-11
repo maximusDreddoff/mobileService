@@ -1,0 +1,34 @@
+.content {
+    background: url("../img/background.png");
+    background-size: cover;
+    height: 640px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.content img {
+    display: block;
+    margin: 20% auto;
+}
+.registrationStep1 {
+    background: url("../img/background_steps.png");
+    background-size: cover;
+    height: 640px;
+    width: 100%;
+}
+.header {
+    height: 50px;
+    }
+.smallLogo {
+    float: right;
+    height: 45px;
+    width: 60px;
+}
+.vcenter {
+    margin: 20px 15px 0 20px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    text-align: center;
+}

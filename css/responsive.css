@@ -1,0 +1,5 @@
+@media screen and (max-width: 680px) {
+    .content img {
+        margin: 50% auto;
+    }
+}
