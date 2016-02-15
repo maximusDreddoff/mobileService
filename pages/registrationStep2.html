@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>mobile service</title>
     <link rel="stylesheet" href="../css/bootstrap-theme.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <script src="../js/jquery-2.2.0.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
 </head>
@@ -40,23 +42,24 @@
                             <img src="../img/line2.png" alt="step one image">
                         </div>
                     </div>
-                    <div class="row cityPicker">
+                    <div class="row cityPicker clientName">
                         <div class="col-xs-12 text text-center text-bold">
                             ФИО
                         </div>
                         <div class="inputs">
                             <div class="col-xs-12">
                                 <form action="">
-                                    <input type="text" class="form-control" placeholder="Фамилия">
-                                    <input type="text" class="form-control" placeholder="Имя">
-                                    <input type="text" class="form-control" placeholder="Отечество">
+                                    <input type="text" minlength="2" class="form-control surname" placeholder="Фамилия"  required>
+                                    <input type="text" minlength="2" class="form-control name" placeholder="Имя" required>
+                                    <input type="text" minlength="3" class="form-control secondName" placeholder="Отечество" required>
                                 </form>
                             </div>
                         </div>
                         <div class="col-xs-12">
                             <div class="row">
-                                <a href="registrationStep3.html"><button class="btn btn-danger btnSubmit" type="submit">ДАЛЕЕ</button></a>
-
+                                <a href="registrationStep3.html">
+                                    <button class="btn btn-danger btnSubmit" type="submit">ДАЛЕЕ</button>
+                                </a>
                             </div>
                         </div>
                     </div>
